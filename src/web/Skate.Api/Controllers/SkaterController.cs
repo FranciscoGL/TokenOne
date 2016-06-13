@@ -1,10 +1,9 @@
 ﻿using System.Web.Http;
-using Skate.Api.Attributes;
 using Skate.Api.Services;
 
 namespace Skate.Api.Controllers
 {
-    [AppAuthorize]
+    [Authorize]
     public class SkaterController : ApiController
     {
         private readonly SkaterService service;

@@ -1,10 +1,9 @@
 ﻿using System.Web.Http;
-using Snowboard.Api.Attributes;
 using Snowboard.Api.Services;
 
 namespace Snowboard.Api.Controllers
 {
-    [AppAuthorize]
+    [Authorize]
     public class SnowboarderController : ApiController
     {
         private readonly SnowboarderService service;
