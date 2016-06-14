@@ -34,19 +34,19 @@ namespace TokenApp {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://www.spawn.com")]
-        public string AudienceAddress {
+        [global::System.Configuration.DefaultSettingValueAttribute("TokenOne")]
+        public string TokenIssuerName {
             get {
-                return ((string)(this["AudienceAddress"]));
+                return ((string)(this["TokenIssuerName"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("TokenOne")]
-        public string TokenIssuerName {
+        [global::System.Configuration.DefaultSettingValueAttribute("bGFtYWxlYm9sZ2lhaGVsbHNwYXdu")]
+        public string ClientId {
             get {
-                return ((string)(this["TokenIssuerName"]));
+                return ((string)(this["ClientId"]));
             }
         }
     }

@@ -30,7 +30,7 @@ namespace Skate.Api
         public void ConfigureOAuth(IAppBuilder app)
         {
             var issuer = SecuritySetting.TokenIssuerName;
-            var audience = SecuritySetting.AudienceAddress;
+            var audience = SecuritySetting.ClientId;
             var securityKey = TextEncodings.Base64Url.Decode(SecuritySetting.SecurityKey);
 
             app.UseJwtBearerAuthentication(

@@ -14,10 +14,10 @@ namespace Authorization.Api.Services
 
         static AudienceService()
         {
-            AudiencesList.TryAdd(SecuritySetting.AudienceAddress,
+            AudiencesList.TryAdd(SecuritySetting.ClientId,
                 new Audience
                 {
-                    ClientId = SecuritySetting.AudienceAddress,
+                    ClientId = SecuritySetting.ClientId,
                     SecretKey = SecuritySetting.SecurityKey,
                     Name = "SecurityFlowPrototype"
                 });

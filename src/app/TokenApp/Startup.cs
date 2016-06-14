@@ -8,9 +8,9 @@ namespace TokenApp
     {
         public static void Start()
         {
-            SecuritySetting.SecurityKey = TokenSetting.Default.SecurityKey;
+            SecuritySetting.ClientId = TokenSetting.Default.ClientId;
 
-            SecuritySetting.AudienceAddress = TokenSetting.Default.AudienceAddress;
+            SecuritySetting.SecurityKey = TokenSetting.Default.SecurityKey;
 
             SecuritySetting.TokenIssuerName = TokenSetting.Default.TokenIssuerName;
         }
