@@ -3,7 +3,6 @@ using Snowboard.Api.Services;
 
 namespace Snowboard.Api.Controllers
 {
-    [Authorize]
     public class SnowboarderController : ApiController
     {
         private readonly SnowboarderService service;
@@ -17,6 +16,15 @@ namespace Snowboard.Api.Controllers
         public IHttpActionResult Get()
         {
             var result = service.Get();
+
+            return Ok(result);
+        }
+
+        [Authorize(Roles = "Supervisor")]
+        [HttpGet]
+        public IHttpActionResult Get(int id)
+        {
+            var result = service.Get(id);
 
             return Ok(result);
         }

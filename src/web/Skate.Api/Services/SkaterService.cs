@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Skate.Api.Models;
 
 namespace Skate.Api.Services
@@ -34,6 +35,11 @@ namespace Skate.Api.Services
         public List<SkaterModel> Get()
         {
             return Data;
+        }
+
+        public SkaterModel Get(int id)
+        {
+            return Data.FirstOrDefault(s => s.Id == id);
         }
     }
 }

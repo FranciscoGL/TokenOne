@@ -157,6 +157,7 @@
     </Compile>
     <Compile Include="Models\SnowboarderModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\SecurityService.cs" />
     <Compile Include="Services\SnowboarderService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

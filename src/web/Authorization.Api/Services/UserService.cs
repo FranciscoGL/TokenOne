@@ -27,8 +27,8 @@ namespace Authorization.Api.Services
                 new User
                 {
                     Id = 2,
-                    Name = "Fran02",
-                    Email = "fran02@spawn.com",
+                    Name = "Supervisor",
+                    Email = "supervisor@spawn.com",
                     Password = PasswordHashHelper.GetPasswordHashAndSalt(string.Format("{0}{1}", "hellspawn", SaltKey)),
                     PasswordSalt = SaltKey,
                     Roles = new List<string>{ RoleConstants.Mananger, RoleConstants.Supervisor }

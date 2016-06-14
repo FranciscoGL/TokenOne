@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Snowboard.Api.Models;
 
 namespace Snowboard.Api.Services
@@ -32,6 +33,11 @@ namespace Snowboard.Api.Services
         public List<SnowboarderModel> Get()
         {
             return Data;
+        }
+
+        public SnowboarderModel Get(int id)
+        {
+            return Data.FirstOrDefault(s => s.Id == id);
         }
     }
 }
