@@ -13,7 +13,7 @@ namespace TokenApp {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
-    public sealed partial class TokenSetting : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class TokenSetting : global::System.Configuration.ApplicationSettingsBase {
         
         private static TokenSetting defaultInstance = ((TokenSetting)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new TokenSetting())));
         
@@ -25,7 +25,7 @@ namespace TokenApp {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Malebolgia1992")]
+        [global::System.Configuration.DefaultSettingValueAttribute("K2IOO55jwWQQlcIr-NdH2T4ENaxCUuZgg6OWOTArfxo")]
         public string SecurityKey {
             get {
                 return ((string)(this["SecurityKey"]));

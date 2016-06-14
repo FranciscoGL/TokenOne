@@ -4,11 +4,11 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.DataHandler.Encoder;
 using Microsoft.Owin.Security.Jwt;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using TokenApp;
-using TokenApp.Helpers;
 
 [assembly: OwinStartup(typeof(Skate.Api.Startup))]
 
@@ -31,7 +31,7 @@ namespace Skate.Api
         {
             var issuer = SecuritySetting.TokenIssuerName;
             var audience = SecuritySetting.AudienceAddress;
-            var securityKey = AuthorizationHelper.GetBytes(SecuritySetting.SecurityKey);
+            var securityKey = TextEncodings.Base64Url.Decode(SecuritySetting.SecurityKey);
 
             app.UseJwtBearerAuthentication(
                 new JwtBearerAuthenticationOptions

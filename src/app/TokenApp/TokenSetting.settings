@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="SecurityKey" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Malebolgia1992</Value>
+      <Value Profile="(Default)">K2IOO55jwWQQlcIr-NdH2T4ENaxCUuZgg6OWOTArfxo</Value>
     </Setting>
     <Setting Name="AudienceAddress" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://www.spawn.com</Value>
